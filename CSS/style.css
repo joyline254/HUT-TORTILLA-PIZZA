@@ -1,9 +1,18 @@
 h1{
     background-color: rgb(4, 4, 61);
-    color: burlywood;
+    color:  rgb(221, 127, 3);
     text-align: center;
 }
 /* Styling the second paragraph*/
 h2{
     text-align: center;
+    color: yellowgreen;
+}
+
+/*Add a image*/
+h2{
+    background-image: url(../IMAGES/pizza1.jpeg);
+    background-repeat: repeat-x;
+    background-position: top right;
+    
 }

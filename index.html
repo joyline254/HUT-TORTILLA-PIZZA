@@ -8,5 +8,52 @@
 </head>
 <body>
     <h1>WELCOME TO TORTILA</h1>
+    <h2>Did you know <b>pizza</b> is from an Italian word<br>
+    'pitta' which means pie or from 'bizzo' which means <br>
+     bite. </h2>
+     <h3>MAKE YOUR ORDER</h3>
+
+     <div>
+         <form>
+
+             <div class="size">
+                 <label for="size">Size</label>
+                 <select>
+                     <option value="small">Small</option>
+                     <option value="medium">Medium</option>
+                     <option value="large">Large</option>
+                 </select>
+             </div>
+
+             <div class="crust">
+                 <label for="crust">Crust</label>
+                 <select>
+                     <option value="Crispy">Crispy</option>
+                     <option value="Stuffed">Stuffed</option>
+                     <option value="Gluten-free">Glutten free</option>
+                 </select>
+             </div>
+
+             <div class="toppings">
+                 <label for="toppings">Toppings</label>
+                 <select>
+                     <option value="hawaiian">Hawaiian</option>
+                     <option value="extra cheese">Exrta cheese</option>
+                     <option value="pepperoni">Pepperoni</option>
+                 </select>
+             </div>
+
+             <div class="number-of-pizza(s)">
+                 <label for="Number of pizzas">Number of pizzas</label>
+                 <input type="number" name="number of pizzas" min="1" max="500" step="1" required>
+             </div>
+
+             <div>
+                 <button type="reset">RESET</button>
+                 <button type="button">PLACE ORDER</button>
+             </div>
+         </form>
+        
+     </div>
 </body>
 </html>

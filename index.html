@@ -25,53 +25,57 @@
     <h3>MAKE YOUR ORDER</h3>
 
     <div>
-        <form>
+        <form id="form">
 
-            <div id="size">
-                <label for="size">Size</label>
-                <select>
+            <div  class="Size">
+                <label for="Size"><b>Size</b></label>
+                <select id="size">
                     <option value="small">Small</option>
                     <option value="medium">Medium</option>
                     <option value="large">Large</option>
                 </select>
             </div>
 
-            <div id="crust">
-                <label for="crust">Crust</label>
-                <select>
+            <div class="Crust">
+                <label for="Crust"><b>Crust</b></label>
+                <select id="crust">
                     <option value="Crispy">Crispy</option>
                     <option value="Stuffed">Stuffed</option>
                     <option value="Gluten-free">Glutten free</option>
                 </select>
             </div>
 
-            <div id="toppings">
-                <label for="toppings">Toppings</label>
-                <select>
+            <div class="Toppings">
+                <label for="Toppings"><b>Toppings</b></label>
+                <select id="toppings">
                     <option value="hawaiian">Hawaiian</option>
-                    <option value="extra-cheese">Exrta cheese</option>
+                    <option value="extra-cheese">Exrta c>heese</option>
                     <option value="pepperoni">Pepperoni</option>
                 </select>
             </div>
 
-            <div >
-                <label for="Number of pizzas">Number of pizza(s)</label>
+            <div  class="Number-of-pizzas">
+                <label for="Number-of-pizzas"><b>Number of pizza(s)</b></label>
                 <input  id="number" type="number" name="number of pizzas" min="1" max="500" step="1" required>
             </div>
 
-            <div>
-                <button type="reset">RESET</button>
-                <button type="button" onclick="totalPrice()" class="btn">PLACE ORDER</button>
+            <div class="mybuttons">
+                <button id="resetbutton" type="reset">RESET</button>
+                <button type="button" onclick="totalPrice()" class="btn"><b>PLACE ORDER</b></button>
             </div>
         </form>
         <div>
-            <h4 id="output1">This is your order without delivery</h4>
+            <h4 id="output1"></h4>
         </div>
 
     </div>
-    <p id="delivery">Incase your want your pizza delivered</p>
-    
+
+    <div>
+    <p id="delivery">INCASE YOU WANT YOUR PIZZA DELIVERED
+    <button type="button" class="btn2" onclick="newTotalPrice()">Press for delivery</button>
+    </p>
+   </div>
+   <script src="JS/script.js"></script>
 </body>
-<script src="JS/script.js"></script>
 
 </html>

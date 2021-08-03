@@ -40,7 +40,12 @@ h3{
     border-color: black;
     border-width: 3px;
     background-color: teal;
-    float: right;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    position: absolute;
+    left: 45%;
+    top:72%
 }
 
 /*Resetbutton*/
@@ -53,7 +58,7 @@ h3{
 #delivery{
     text-align:justify;
     text-indent:100px;
-    color: rgb(104, 12, 12);
+    color: rgb(139, 8, 8);
     
 
 }
@@ -65,26 +70,46 @@ h3{
 }
 
 .Size{
-    font-size: 30px;
-    border-radius: 50%;
+    font-size: 25px;
+    /* border-radius: 50%; */
     padding: 14px 40px;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    height: auto;
+    top: 80%;
+    left: 75%;
 
 }
 .Crust{
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 50%;
+    display:flex;
+    /* right: 70%; */
+    
 }
 
 .Number-of-pizzas{
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    position: absolute;
+    left: 60%;
+    top:50%
 
 
 }
 .Toppings{
-    font-size: 30px;
+    font-size: 25px;
     border-top: 50%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    position: absolute;
+    left: 70%;
+    top:60%
+    
     
     
     

@@ -76,9 +76,34 @@ function totalPrice () {
         alert("This is incorrect please make an order")
 
     } else {
-        document.getElementById("output1").innerHTML = "Your total price for " + size  + crust+ toppings + " is Ksh. " + yourTotalPrice;
-    };
+        document.getElementById("output1").innerHTML = "Your total price for "+numbersOf+" " + size+ " "  + crust+ " " + toppings+" " + "pizza(s) " + " is Ksh. " + yourTotalPrice;
+    }
 };
+
 //String.prototype.newTotalPrice=function() {
  //   alert(this +"Ksh.200 more on delivery")
 //};
+function includingDelivery(){
+ totalPrice()
+    alert("Your total payment is" + yourTotalPrice+ "plus 200 more")
+    prompt("Enter your location")
+    alert("Thank you for chooing us!!")
+    newTotal=yourTotalPrice+200;
+    document.getElementById("output2").innerHTML="Our esteemed customer your total your for "+numbersOf+ " "+"for order " + size+ " "+crust+" " +toppings+" "+"and you should pay "+newTotal;
+};
+
+
+   /*function includingDelivery(){ 
+    totalPrice()
+function onDelivery(yourTotalPrice,twohunredmore){
+    
+    this.plusDelivery=yourTotalPrice;
+    this.more=twohunredmore
+}
+onDelivery.prototype.yourPriceNow=function () {
+    return this.yourTotalPrice+ " "+this.twohundredmore
+    
+}
+const youShouldPay = new onDelivery("addtheinitial",+"deliverycharges");
+document.getElementById("output2").innerHTML="Dear customer you should pay"+youShouldPay.yourPriceNow()
+   };*/
